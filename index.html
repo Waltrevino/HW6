@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </link>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Weather Dashboard</h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="col-sm-3 float-left">
+                    <h5>Search for a City:</h5>
+                    <form action="">
+                        <input type="text" id="city_search" placeholder="City">
+                        <button id="btn_search"><i class="fa fa-search"></i>
+                        </button>
+                        <br><br>
+                        <div class="menu">                            
+                            <a class="menu-item" href="#">Austin</a>
+                            <a class="menu-item" href="#">Chicago</a> 
+                            <a class="menu-item" href="#">New York</a>
+                            <a class="menu-item" href="#">Orland</a>
+                            <a class="menu-item" href="#">San Francisco</a>
+                            <a class="menu-item" href="#">Seattle</a>
+                            <a class="menu-item" href="#">Denver</a>
+                            <a class="menu-item" href="#">Atlanta</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-sm-9 float-right">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 id="city"> </h3> <span id="nowLabel"> Now</span>
+                            <img id="today-icon" src="" alt="">  
+                            <br>
+                            <p>Temperature: <span id="temp"> F</span></p>
+                            <p>Humidity: <span id="humidity"></span></p>
+                            <p>Wind Speed: <span id="wind-speed"></span> MPH</p>
+                            <p>UV Index: <span class="uv-index"></span></p>
+                        </div>
+                    </div>
+                    <row col-sm-12>
+                        <div class="forecast-container">
+                            <h4>5-Day Forecast:</h4>
+                            <div class="daily-forecast">
+                                <div class="day">
+                                    <h6 id="day1"></h6>
+                                    <img id="img1" src="" alt="">
+                                    <p>Temperature: <span id="1"> F</span></p>
+                                    <p>Humidity: <span id="humidity1">%</span></p>
+                                </div>
+                                <div class="day">
+                                    <h6 id="day2"></h6>
+                                    <img id="img2" src="" alt="">
+                                    <p>Temperature: <span id="2"> F</span></p>
+                                    <p>Humidity: <span id="humidity2">%</span></p>
+                                </div>
+                                <div class="day">
+                                    <h6 id="day3"></h6>
+                                    <img id="img3" src="" alt="">
+                                    <p>Temperature: <span id="3"> F</span></p>
+                                    <p>Humidity: <span id="humidity3">%</span></p>
+                                </div>
+                                <div class="day">
+                                    <h6 id="day4"></h6>
+                                    <img id="img4" src="" alt="">
+                                    <p>Temperature: <span id="4"> F</span></p>
+                                    <p>Humidity: <span id="humidity4">%</span></p>
+                                </div>
+                                <div class="day">
+                                    <h6 id="day5"></h6>
+                                    <img id="img5" src="" alt="">
+                                    <p>Temperature: <span id="5"> F</span></p>
+                                    <p>Humidity: <span id="humidity5">%</span></p>
+                                </div>
+                            </div>
+                    </row>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+  <!-- jQuery JS -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
